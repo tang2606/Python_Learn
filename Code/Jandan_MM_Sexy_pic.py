@@ -33,7 +33,7 @@ def Down_loand_pics(url, ooscore):
         if vote_positive > ooscore:
             ir = requests.get(pics_list_pic)
             save_jpg = open('/Users/wade/Downloads/temp/xxoo/' + name, 'wb').write(ir.content)
-            print(save_jpg)
+
             print('%s Save OK !' % (name))
         else:
             print('%s 评分小于%d跳过下载，实际评分：[%d] '%(pics_list_name, ooscore, vote_positive))

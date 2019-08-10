@@ -8,8 +8,8 @@ import os
 def main():
     file_path=input(u'请输入文件所在路径：')
     if os.path.exists(file_path):#判断给出的路径是否存在
-        a=os.walk(file_path)#walk函数得到的是一个元祖(路径,目录,文件名)
-        for root, dirs, files in a:
+        file_lists=os.walk(file_path)#walk函数得到的是一个元祖(路径,目录,文件名)
+        for root, dirs, files in file_lists:
             i=0
             file_name=input('请输入您想要的文件前缀名：')
             file_num=len(files)#文件个数
