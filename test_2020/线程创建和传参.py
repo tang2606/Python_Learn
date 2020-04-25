@@ -12,7 +12,7 @@ import threading,random,time
 import string
 
 def list1():
-    for i in range(0,20):
+    for i in range(0,52):
 
         print(i, '\n')
 
