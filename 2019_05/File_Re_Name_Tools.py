@@ -11,9 +11,6 @@
 import os
 import time
 import tkinter.filedialog
-import requests
-
-
 
 
 class file_tools():
